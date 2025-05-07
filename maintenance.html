@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://cdn.fontcdn.ir/Font/Persian/IRANSans/IRANSans.css" rel="stylesheet">
+    
+    
 
     <script type="text/javascript" src="js/jquery-3.2.1.slim.js"></script>
     <script type="text/javascript" src="js/popper.js"></script>
@@ -11,61 +17,180 @@
 
     <title>مدرسه آنلاین هوشمند</title>
 </head>
-<body class="bg-dark text-white">
+<body class="text-white"> 
 
-<div class="container d-flex flex-column justify-content-between mx-auto">
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary text-white">
-
-        <div class="collapse navbar-collapse justify-content-center bg-dark" id="#appNavbar">
+    <nav class="navbar navbar-expand-md navbar-custom">
+        <a class="navbar-brand font-weight-bold" href="#">مدرسه هوشمند</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#appNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse justify-content-center" id="appNavbar">
             <ul class="navbar-nav">
-                <li class="nav-item active col p-2">
-                    <a class="nav-link text-white font-weight-bold text-uppercase" href="#">خانه</a>
+                <li class="nav-item active p-2">
+                    <a class="nav-link font-weight-bold" href="maintenance.html">خانه</a>
                 </li>
+                <li class="nav-item p-2"><a class="nav-link" href="#">کلاس ها</a></li>
+                <li class="nav-item p-2"><a class="nav-link" href="blogs.html">بلاگ</a></li>
+                <li class="nav-item p-2"><a class="nav-link" href="about.html">درباره ما</a></li>
+                <li class="nav-item p-2"><a class="nav-link" href="contact.html">تماس با ما</a></li>
 
-                <li class="nav-item col-3 p-2">
-                    <a class="nav-link " href="#">کلاس ها</a>
-                </li>
-
-                <li class="nav-item col-3 p-2">
-                    <a class="nav-link" href="#">دروس</a>
-                </li>
-
-                <li class="nav-item col-3 p-2">
-                    <a class="nav-link" href="#">درباره ما</a>
-                </li>
-
-                <li class="nav-item col-3 p-2">
-                    <a class="nav-link" href="#">تماس با ما</a>
-                </li>
-
-                <li class="nav-item dropdown bg-info p-2 col-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="loginMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">ورود</a>
-
-                    <div class="dropdown-menu" aria-labelledby="loginMenu">
-                        <a class="dropdown-item" href="login-student.html">ورود به عنوان دانش آموز</a>
-                        <a class="dropdown-item" href="login-teacher.html">ورود به عنوان معلم</a>
-                        <a class="dropdown-item" href="login-parent.html">ورود به عنوان ولی</a>
+                <li class="nav-item dropdown p-2">
+                    <div class="auth-menu">
+                        <a class="nav-link dropdown-toggle" href="#" id="loginMenu" data-toggle="dropdown">ورود</a>
+                        <div class="dropdown-menu" aria-labelledby="loginMenu">
+                            <a class="dropdown-item" href="login-student.html">دانش‌آموز</a>
+                            <a class="dropdown-item" href="login-teacher.html">معلم</a>
+                            <a class="dropdown-item" href="login-parent.html">ولی</a>
+                        </div>
                     </div>
+
                 </li>
-
-                <li class="nav-item dropdown bg-danger p-2 col-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="registerMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> ثبت نام</a>
-
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="register-student.html">ثبت نام به عنوان دانش آموز </a>
-                        <a class="dropdown-item" href="register-teacher.html">ثبت نام به عنوان معلم </a>
-                        <a class="dropdown-item" href="register-parent.html">ثبت نام به عنوان ولی </a>
+    
+                <li class="nav-item dropdown p-2">
+                    <a class="nav-link dropdown-toggle" href="#" id="registerMenu" data-toggle="dropdown">ثبت‌نام</a>
+                    <div class="dropdown-menu" aria-labelledby="registerMenu">
+                        <a class="dropdown-item" href="register-student.html">دانش‌آموز</a>
+                        <a class="dropdown-item" href="register-teacher.html">معلم</a>
+                        <a class="dropdown-item" href="register-parent.html">ولی</a>
                     </div>
                 </li>
             </ul>
-
         </div>
     </nav>
-
-</div>
-
+    
 
 
+
+
+
+
+
+
+
+
+
+    <div class="container mt-5 p-5 mb-5">
+
+
+
+        <div class="row justify-content-center gap-3">
+
+
+            <div class="col-md-3">
+                <div class="card bg-light text-dark">
+                    <img src="img/blog-image3.jpg" class="card-img-top" alt="تصویر مقاله">
+                    <div class="card-body text-right">
+                        <h5 class="card-title font-weight-bold"> درس علوم تجربی</h5>
+                        <p class="card-text">درس علوم تجربی با استاد صدری</p>
+                        <a href="product.html" class="btn btn-product w-100">جزییات کلاس</a>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <span>هزینه کلاس :15000000 </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-light text-dark">
+                    <img src="img/blog-image1.jpg" class="card-img-top" alt="تصویر مقاله">
+                    <div class="card-body text-right">
+                        <h5 class="card-title font-weight-bold"> درس ریاضی </h5>
+                        <p class="card-text">درس ریاضی با استاد حسین زاده</p>
+                        <a href="product.html" class="btn btn-product w-100">جزییات</a>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <span>هزینه کلاس :25000000 </span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-light text-dark">
+                    <img src="img/blog-image1.jpg" class="card-img-top" alt="تصویر مقاله">
+                    <div class="card-body text-right">
+                        <h5 class="card-title font-weight-bold"> درس مطالعات اجتماعی </h5>
+                        <p class="card-text">درس مطالعات اچتماعی با استاد  محمدی</p>
+                        <a href="product.html" class="btn btn-product w-100">جزییات</a>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <span>هزینه کلاس :5000000 </span>
+ 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card bg-light text-dark">
+                    <img src="img/blog-image1.jpg" class="card-img-top" alt="تصویر مقاله">
+                    <div class="card-body text-right">
+                        <h5 class="card-title font-weight-bold">درس فارسی</h5>
+                        <p class="card-text">درس مطالعات اچتماعی با استاد  حسینی</p>
+                        <a href="product.html" class="btn btn-product w-100">جزییات</a>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <span>هزینه کلاس :7000000 </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    
+
+
+    <div class="container mt-5 p-5 mb-5">
+        <div class="row justify-content-center gap-3">
+
+            <div class="col-md-4">
+                <div class="card bg-light text-dark">
+                    <img src="img/blog-image3.jpg" class="card-img-top" alt="تصویر مقاله">
+                    <div class="card-body text-right">
+                        <h5 class="card-title font-weight-bold">افزایش بهروری دانش آموزان</h5>
+                        <p class="card-text">اینجا خلاصه‌ای از مقاله آموزشی شما قرار می‌گیرد. متنی که بتواند مخاطبان را جذب کند!</p>
+                        <a href="blog.html" class="btn btn-primary">مطالعه بیشتر</a>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        انتشار: ۱۶ فروردین ۱۴۰۴
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-light text-dark">
+                    <img src="img/blog-image1.jpg" class="card-img-top" alt="تصویر مقاله">
+                    <div class="card-body text-right">
+                        <h5 class="card-title font-weight-bold">درباره استادان </h5>
+                        <p class="card-text">اینجا خلاصه‌ای از مقاله آموزشی شما قرار می‌گیرد. متنی که بتواند مخاطبان را جذب کند!</p>
+                        <a href="blog.html" class="btn btn-primary">مطالعه بیشتر</a>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        انتشار: ۱۶ فروردین ۱۴۰۴
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card bg-light text-dark">
+                    <img src="img/blog-image1.jpg" class="card-img-top" alt="تصویر مقاله">
+                    <div class="card-body text-right">
+                        <h5 class="card-title font-weight-bold">چگونه دانش آموزان را به درس خواندن تشویق کنیم؟ </h5>
+                        <p class="card-text">اینجا خلاصه‌ای از مقاله آموزشی شما قرار می‌گیرد. متنی که بتواند مخاطبان را جذب کند!</p>
+                        <a href="blog.html" class="btn btn-primary">مطالعه بیشتر</a>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        انتشار: ۱۶ فروردین ۱۴۰۴
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 </html>
