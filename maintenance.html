@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tailwind.css">
     
     <link href="https://cdn.fontcdn.ir/Font/Persian/IRANSans/IRANSans.css" rel="stylesheet">
     
-    
-
     <script type="text/javascript" src="js/jquery-3.2.1.slim.js"></script>
     <script type="text/javascript" src="js/popper.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -37,7 +36,12 @@
 
                 <li class="nav-item dropdown p-2">
                     <div class="auth-menu">
-                        <a class="nav-link dropdown-toggle" href="#" id="loginMenu" data-toggle="dropdown">ورود</a>
+                        <a class="nav-link dropdown-toggle
+                            bg-blue-800
+                            border-4
+                            border-transparent
+                            focus:ring-indigo
+                            " href="#" data-toggle="dropdown">ورود</a>
                         <div class="dropdown-menu" aria-labelledby="loginMenu">
                             <a class="dropdown-item" href="login-student.html">دانش‌آموز</a>
                             <a class="dropdown-item" href="login-teacher.html">معلم</a>
@@ -48,7 +52,7 @@
                 </li>
     
                 <li class="nav-item dropdown p-2">
-                    <a class="nav-link dropdown-toggle" href="#" id="registerMenu" data-toggle="dropdown">ثبت‌نام</a>
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">ثبت‌نام</a>
                     <div class="dropdown-menu" aria-labelledby="registerMenu">
                         <a class="dropdown-item" href="register-student.html">دانش‌آموز</a>
                         <a class="dropdown-item" href="register-teacher.html">معلم</a>
