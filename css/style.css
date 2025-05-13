@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     100% { background-color: rgba(180, 170, 160, 1); }
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 
 .navbar-custom {
     background-color: #000000;
@@ -86,7 +90,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     color: #ffffff;
     border: none !important;
     font-family: 'IRANSans', sans-serif;
-    
 }
 
 .btn-product:hover {
@@ -165,7 +168,7 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     color: #ffffff;
     border-radius: 13px;
     transition-timing-function: ease-in-out;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 
 #loginMenu:focus, #registerMenu:focus {
@@ -173,5 +176,13 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     color: #3bff4f !important;
     border-radius: 13px;
     transition-timing-function: ease-in-out;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
+}
+
+.unique-class {
+    background-color: #062c33;
+}
+
+.unique2-class {
+    background-color: #1e7e34;
 }
